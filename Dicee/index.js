@@ -33,3 +33,6 @@ if(randomNumber1 > randomNumber2) {
 else if(randomNumber1 < randomNumber2) {
 	document.getElementById("first_h1").innerHTML = "Player 2 Wins!";
 }
+else  { // if randomNumber1 == randomNumber2
+	document.getElementById("first_h1").innerHTML = "Draw!";
+}
