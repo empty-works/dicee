@@ -25,3 +25,4 @@ function getDice(randNumber) {
 	return fileName;
 }
 document.querySelectorAll("img.img1")[0].setAttribute("src", getDice(randomNumber1));
+document.querySelectorAll("img.img2")[0].setAttribute("src", getDice(randomNumber2));
