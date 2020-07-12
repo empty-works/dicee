@@ -26,3 +26,7 @@ function getDice(randNumber) {
 }
 document.querySelectorAll("img.img1")[0].setAttribute("src", getDice(randomNumber1));
 document.querySelectorAll("img.img2")[0].setAttribute("src", getDice(randomNumber2));
+
+if(randomNumber1 > randomNumber2) {
+	
+}
