@@ -28,5 +28,8 @@ document.querySelectorAll("img.img1")[0].setAttribute("src", getDice(randomNumbe
 document.querySelectorAll("img.img2")[0].setAttribute("src", getDice(randomNumber2));
 
 if(randomNumber1 > randomNumber2) {
-	
+	document.getElementById("first_h1").innerHTML = "Player 1 Wins!";
+}
+else if(randomNumber1 < randomNumber2) {
+	document.getElementById("first_h1").innerHTML = "Player 2 Wins!";
 }
