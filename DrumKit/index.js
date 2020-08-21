@@ -44,6 +44,7 @@ for(var i = 0; i < numberOfDrumsButtons; i++) {
 				break;
 
 			default:
+				console.log(buttonInnerHTML);
 		}
 	});
 }
