@@ -1,16 +1,17 @@
 var numberOfDrumsButtons = document.querySelectorAll(".drum").length;
 
+// Detects mouse click.
 for(var i = 0; i < numberOfDrumsButtons; i++) {
 	document.querySelectorAll(".drum")[i].addEventListener("click", function () {
 
 		var buttonInnerHTML = this.innerHTML;
-
-		// Can grab the identity of the button with "this"
+		makeSound(buttonInnerHTML);
 	});
 }
 
+// Detects keyboard press.
 document.addEventListener("keydown", function(event) {
-	console.log(event)
+	makeSound(event);
 });
 
 function makeSounds(key) {
