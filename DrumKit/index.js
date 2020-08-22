@@ -11,11 +11,11 @@ for(var i = 0; i < numberOfDrumsButtons; i++) {
 
 // Detects keyboard press.
 document.addEventListener("keydown", function(event) {
-	makeSound(event);
+	makeSound(event.key);
 });
 
-function makeSounds(key) {
-	switch(buttonInnerHTML) {
+function makeSound(key) {
+	switch(key) {
 		
 		case "w":
 			var tom1 = new Audio("sounds/tom-1.mp3");
