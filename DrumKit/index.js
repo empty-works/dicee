@@ -6,6 +6,7 @@ for(var i = 0; i < numberOfDrumsButtons; i++) {
 
 		var buttonInnerHTML = this.innerHTML;
 		makeSound(buttonInnerHTML);
+		buttonAnimation();
 	});
 }
 
@@ -55,5 +56,9 @@ function makeSound(key) {
 		default:
 			console.log(buttonInnerHTML);
 	}
+
+}
+
+function buttonAnimation(currentKey) {
 
 }
