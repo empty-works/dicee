@@ -5,6 +5,8 @@ table {
 
 td {
 	border: 2px solid black;
-	height: 10em;
-	width: 10em;
+	height: 150px;
+	width: 150px;
+	text-align: center;
+	font-size: 100px;
 }
