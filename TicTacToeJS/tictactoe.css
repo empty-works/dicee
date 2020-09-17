@@ -1,3 +1,10 @@
 table {
-	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td {
+	border: 2px solid black;
+	height: 10em;
+	width: 10em;
 }
