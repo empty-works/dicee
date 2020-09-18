@@ -24,3 +24,22 @@ function checkBottom(colIndex) {
 		}
 	}
 }
+
+function matchCheck(one, two, three, four) {
+	return one === two && one === three && one === four && one !== "rgb(128, 128, 128, 128)" && one !== undefined;
+}
+
+function checkHorizontalMatch() {
+	for(var row = 0; i < 6; i++) {
+		for(var col = 0; i < 4; i++) {
+			if(matchCheck(returnColor(row, col), returnColor(row, col + 1), returnColor(row, col + 2), returnColor(row, col + 3)) === true) {
+				console.log("horiz");
+				//reportWin(row, col);
+				return true;
+			}
+			else {
+				continue;
+			}
+		}
+	}
+}
