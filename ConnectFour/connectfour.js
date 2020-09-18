@@ -43,3 +43,38 @@ function checkHorizontalMatch() {
 		}
 	}
 }
+
+function checkVerticalMatch() {
+	for(var col = 0; col < 7; col++) {
+		for(var row = 0; row < 4; row++) {
+			if(matchCheck(returnColor(row, col), returnColor(row + 1, col), returnColor(row + 2, col), returnColor(row + 3, col)) === true) {
+				console.log("horiz");
+				//reportWin(row, col);
+				return true;
+			}
+			else {
+				continue;
+			}
+		}
+	}
+}
+
+function checkDiagonalMatch() {
+	for(var col = 0; col < 5; col++) {
+		for(var row = 0; row < 7; row++) {
+			if(matchCheck(returnColor(row, col), returnColor(row + 1, col + 1), returnColor(row + 2, col + 2), returnColor(row + 3, col + 3)) === true) {
+				console.log("horiz");
+				//reportWin(row, col);
+				return true;
+			}
+			else if(matchCheck(returnColor(row, col), returnColor(row - 1, col + 1), returnColor(row - 2, col + 2), returnColor(row - 3, col + 3)) === true) {
+				console.log("horiz");
+				//reportWin(row, col);
+				return true;
+			}
+			else {
+				continue;
+			}
+		}
+	}
+}
